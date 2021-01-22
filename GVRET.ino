@@ -207,8 +207,8 @@ void loadSettings()
         SysSettings.SWCANMode1Pin = CANDUE_SWCAN_MODE1;
         SysSettings.useSD = true;
         SysSettings.SDCardSelPin = CANDUE_SDCARD_SEL;
-        SysSettings.LED_CANTX = 73; //The Arduino Due has three LEDs
-        SysSettings.LED_CANRX = 72; //so we can use them all
+        SysSettings.LED_CANTX = 14; //The Arduino Due has three LEDs
+        SysSettings.LED_CANRX = 15; //so we can use them all
         SysSettings.LED_LOGGING = 13; //The above two are active low. This is active high.
         SysSettings.logToggle = false;
         SysSettings.txToggle = true;
@@ -216,12 +216,12 @@ void loadSettings()
         SysSettings.dedicatedSWCAN = false;
         SysSettings.numBuses = 2;
         pinMode(13, OUTPUT); //just to be sure they're outputs
-        pinMode(73, OUTPUT);
-        pinMode(72, OUTPUT);
+        pinMode(14, OUTPUT);
+        pinMode(15, OUTPUT);
         //And set all lights to be off.
         digitalWrite(13, LOW);
-        digitalWrite(72, HIGH);
-        digitalWrite(73, HIGH);
+        digitalWrite(14, HIGH);
+        digitalWrite(15, HIGH);
         break;
     }
     if (SysSettings.SWCANMode0Pin != 255) pinMode(SysSettings.SWCANMode0Pin, OUTPUT);
@@ -1156,4 +1156,3 @@ void loop()
     //this should still be here. It checks for a flag set during an interrupt
     //sys_io_adc_poll();
 }
-

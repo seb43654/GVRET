@@ -153,9 +153,9 @@ extern DigitalCANToggleSettings digToggleSettings;
 #define EEPROM_VER		0x17
 
 #define CANDUE_EEPROM_WP_PIN	18
-#define CANDUE_CAN0_EN_PIN		50
-#define CANDUE_CAN1_EN_PIN		48
-#define CANDUE_USE_SD			1
+#define CANDUE_CAN0_EN_PIN		62
+#define CANDUE_CAN1_EN_PIN		65
+#define CANDUE_USE_SD			0
 #define CANDUE_SDCARD_SEL		10
 #define CANDUE_SWCAN_MODE0		46
 #define CANDUE_SWCAN_MODE1		44
@@ -183,4 +183,3 @@ extern DigitalCANToggleSettings digToggleSettings;
 #define NUM_OUTPUT	8
 
 #endif /* CONFIG_H_ */
-
