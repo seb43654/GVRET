@@ -1,6 +1,10 @@
 GEV-RET
 =======
 
+Custom version for SKPang Due Shield
+
+![GitHub Logo](/Case/case.jpeg)
+
 Generalized Electric Vehicle Reverse Engineering Tool
 
 A project turn the GEVCU hardware into a specialized reverse engineering tool.
