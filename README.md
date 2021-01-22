@@ -1,9 +1,25 @@
 GEV-RET
 =======
 
-Custom version for SKPang Due Shield
+## Custom version for SKPang Due Shield with printable case
 
 ![GitHub Logo](/Case/case.jpeg)
+
+#### Shopping List:
+
+- Arduino DUE (cheap copies work fine)
+- SKPang Dual CANBus Shield: http://skpang.co.uk/catalog/dual-can-bus-interface-for-arduino-due-p-1579.html
+- Two of these switches: https://www.ebay.co.uk/itm/Mini-Small-Black-On-Off-Boat-4x4-Quad-Rocker-Switch-Rectangle-10x15mm-SPST-2-PIN/223070560713
+- Four M4 by 20mm screws with allen cap head
+- 3D Printer to print included case files
+
+#### Assembly:
+
+1. Snap switches into case
+2. Remove termination headers from canbus shield
+3. Solder on hard wires to switches
+4. Screw together with specific fasteners
+
 
 Generalized Electric Vehicle Reverse Engineering Tool
 
